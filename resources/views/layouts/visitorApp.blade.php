@@ -73,9 +73,49 @@
 
     <script type="text/javascript">
     function dbClicked() {
-      var selObj = window.getSelection();
-      alert(selObj);
+      // var selObj = window.getSelection();
+      // alert(selObj);
     }
+    </script>
+    <script>
+        $(document).ready(function(){
+
+            $('body').dblclick(function(){
+                $('.magic-box').removeClass('faded');
+                $('body').addClass('closeClick');
+                var selObj = window.getSelection();
+                $('.selectedWord').text(selObj);
+                var settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "url": "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term="+selObj,
+                    "dataType" : "json",
+                    "method": "GET",
+                    "headers": {
+                        "x-rapidapi-host": "mashape-community-urban-dictionary.p.rapidapi.com",
+                        "x-rapidapi-key": "b2dc737d95mshdf87108019deeeep17ddd6jsn5983833987bd"
+                    }
+                };
+
+                $.ajax(settings,).done(function (response) {
+                    console.log(typeof response.list[0]);
+                    if(typeof response.list[0]!=='undefined')
+                        $('.wordMeaning').text(response.list[0].definition);
+                    else
+                        $('.wordMeaning').text('No meaning found');
+                });
+            });
+            $('.crossControl').click(function () {
+                $('.magic-box').addClass('faded');
+                $('.wordMeaning').text('');
+            });
+            $('body').click(function () {
+                $('.magic-box').addClass('faded');
+                $('body').removeClass('closeClick');
+                $('.wordMeaning').text('');
+            });
+
+        })
     </script>
 </body>
 </html>

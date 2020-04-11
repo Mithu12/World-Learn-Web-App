@@ -8,6 +8,26 @@
         <div class="row">
           <div class="col-lg-3 col-md-4 pd-left-none no-pd">
 
+
+              <div class="main-left-sidebar no-margin magic-box  faded">
+                  <div class="user-data full-width">
+
+                      <ul class="user-fw-status">
+                          <i class="fa fa-times-circle crossControl"></i>
+                          <li>
+                              <h4>Word</h4>
+                              <span class="selectedWord"></span>
+                          </li>
+                          <li>
+                              <h4>Meaning</h4>
+                              <span class="wordMeaning"></span>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+
+
           </div>
           <div class="col-lg-6 col-md-8 no-pd">
             <div class="main-ws-sec">

@@ -2,12 +2,12 @@
 
 @section('content')
 <main>
-  <div class="main-section">
+  <div class="main-section ">
     <div class="container mt-3">
       <div class="main-section-data">
         <div class="row">
           <div class="col-lg-3">
-            <div class="main-left-sidebar">
+            <div class="main-left-sidebar fixUp">
               <div class="user_profile">
                 <div class="user-pro-img">
                   <img src="{{ asset('images/profileDp')}}/{{ $userDta->image }}" alt="">
@@ -26,6 +26,24 @@
                 </ul>
               </div><!--user_profile end-->
 
+
+
+                <div class="main-left-sidebar no-margin magic-box  faded">
+                    <div class="user-data full-width">
+
+                        <ul class="user-fw-status">
+                            <i class="fa fa-times-circle crossControl"></i>
+                            <li>
+                                <h4>Word</h4>
+                                <span class="selectedWord"></span>
+                            </li>
+                            <li>
+                                <h4>Meaning</h4>
+                                <span class="wordMeaning"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
 
             </div><!--main-left-sidebar end-->

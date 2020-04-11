@@ -11,7 +11,7 @@
 
 
 
-                            <div class="main-left-sidebar no-margin magic-box  ">
+                            <div class="main-left-sidebar no-margin magic-box  faded">
                                 <div class="user-data full-width">
 
                                     <ul class="user-fw-status">
@@ -26,7 +26,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div><!--main-left-sidebar end-->
+                            </div>
 
 
 

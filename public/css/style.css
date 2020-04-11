@@ -6823,3 +6823,10 @@ ul#myTab {
     float: right;
     right: 0;
 }
+header{
+    position: fixed;
+    z-index: 99999;
+}
+.fixUp{
+    margin-top: 45px;
+}

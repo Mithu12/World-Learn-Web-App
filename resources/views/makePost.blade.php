@@ -5,6 +5,25 @@
 
 
 
+    <div class="main-left-sidebar no-margin magic-box  faded">
+        <div class="user-data full-width">
+
+            <ul class="user-fw-status">
+                <i class="fa fa-times-circle crossControl"></i>
+                <li>
+                    <h4>Word</h4>
+                    <span class="selectedWord"></span>
+                </li>
+                <li>
+                    <h4>Meaning</h4>
+                    <span class="wordMeaning"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
     <section class="profile-account-setting">
         <div class="container">
             <div class="account-tabs-setting">
