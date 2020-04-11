@@ -1,3 +1,54 @@
-'Intervention\Image\ImageServiceProvider',
+<?php
 
-'Image' => 'Intervention\Image\Facades\Image',
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+	CURLOPT_URL => "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=wat",
+	CURLOPT_RETURNTRANSFER => true,
+	CURLOPT_FOLLOWLOCATION => true,
+	CURLOPT_ENCODING => "",
+	CURLOPT_MAXREDIRS => 10,
+	CURLOPT_TIMEOUT => 30,
+	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+	CURLOPT_CUSTOMREQUEST => "GET",
+	CURLOPT_HTTPHEADER => array(
+		"x-rapidapi-host: mashape-community-urban-dictionary.p.rapidapi.com",
+		"x-rapidapi-key: b2dc737d95mshdf87108019deeeep17ddd6jsn5983833987bd"
+	),
+));
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+	echo "cURL Error #:" . $err;
+} else {
+	echo $response;
+}
+
+
+
+
+
+https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+
+
+Code Snippet
+(JavaScript) jQuery
+
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=wat",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "mashape-community-urban-dictionary.p.rapidapi.com",
+		"x-rapidapi-key": "b2dc737d95mshdf87108019deeeep17ddd6jsn5983833987bd"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});

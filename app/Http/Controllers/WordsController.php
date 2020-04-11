@@ -8,8 +8,16 @@ class WordsController extends Controller
 {
     function getPage()
     {
+        return view('test');
        $client = new \GuzzleHttp\Client();
-       $response = $client->request('GET', 'https://en.glosbe.com/en/bn/doll');
+       $response = $client->request('GET',
+           'https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=kill',
+           ['header'=>[
+                   "x-rapidapi-host"=>" mashape-community-urban-dictionary.p.rapidapi.com",
+                   "x-rapidapi-key"=>" b2dc737d95mshdf87108019deeeep17ddd6jsn5983833987bd"
+               ]
+           ]
+           );
 
          $response->getStatusCode(); // 200
          $response->getHeaderLine('content-type'); // 'application/json; charset=utf8'
@@ -69,12 +77,6 @@ class WordsController extends Controller
 
     function getMeaning($word)
     {
-        $client = new \GuzzleHttp\Client();
-        $response = $client->request('GET', 'https://en.glosbe.com/en/bn/'.$word);
-        $response->getStatusCode(); // 200
-        $response->getHeaderLine('content-type'); // 'application/json; charset=utf8'
-        echo $page = $response->getBody(); // '{"id": 1420053, "name": "guzzle", ...}'
-        // echo strrpos($page,'</body>');
-//        return view('test',compact('page'));
+        echo 'yoyo';
     }
 }

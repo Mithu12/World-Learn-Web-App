@@ -13,7 +13,7 @@ Route::get('/logout',function ()
 
 //=======================Test routes
 
-Route::get('/test', 'UsersController@test');
+//Route::get('/test', 'UsersController@test');
 
 
 /*==========================visitor routes=================*/
@@ -21,6 +21,7 @@ Route::get('/','VisitorController@index')->name('landingPage');
 
 /*==========================Word meaning routes=================*/
 Route::get('/meaning/{word}','WordsController@getMeaning');
+Route::get('/test','WordsController@getPage');
 
 Auth::routes();
 /*==========================user profile routes rotes=================*/

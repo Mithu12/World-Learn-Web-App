@@ -15,6 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -31,7 +32,7 @@
   			<div class="container">
   				<div class="header-data">
   					<div class="logo">
-  						<a href="index.html" title=""><img src="images/logo.png" alt=""></a>
+
   					</div><!--logo end-->
   					<div class="search-bar">
   						<form>
@@ -97,27 +98,50 @@
     <script type="text/javascript" src="{{ asset('js/lib/slick/slick.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
     <script type="text/javascript">
-        var settings = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=kill",
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "mashape-community-urban-dictionary.p.rapidapi.com",
-                "x-rapidapi-key": "b2dc737d95mshdf87108019deeeep17ddd6jsn5983833987bd"
-            }
-        }
 
-        $.ajax(settings).done(function (response) {
-            console.log(response);
-        });
 
-    </script>
-    <script type="text/javascript">
     function dbClicked() {
-      var selObj = window.getSelection();
-      alert(selObj);
+      // var selObj = window.getSelection();
+      // alert(selObj);
     }
+    </script>
+    <script>
+        $(document).ready(function(){
+
+            $('body').dblclick(function(){
+                $('.magic-box').removeClass('faded');
+                $('body').addClass('closeClick');
+                // var selObj = window.getSelection();
+                // $('.selectedWord').text(selObj);
+                // var settings = {
+                //     "async": true,
+                //     "crossDomain": true,
+                //     "url": "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term="+selObj,
+                //     "dataType" : "json",
+                //     "method": "GET",
+                //     "headers": {
+                //         "x-rapidapi-host": "mashape-community-urban-dictionary.p.rapidapi.com",
+                //         "x-rapidapi-key": "b2dc737d95mshdf87108019deeeep17ddd6jsn5983833987bd"
+                //     }
+                // };
+                //
+                // $.ajax(settings,).done(function (response) {
+                //     console.log(typeof response.list[0]);
+                //     if(typeof response.list[0]!=='undefined')
+                //         $('.wordMeaning').text(response.list[0].definition);
+                //     else
+                //         $('.wordMeaning').text('No meaning found');
+                // });
+            });
+            $('.crossControl').click(function () {
+                $('.magic-box').addClass('faded');
+            });
+            $('body').click(function () {
+                $('.magic-box').addClass('faded');
+                $('body').removeClass('closeClick');
+            });
+
+        })
     </script>
 </body>
 </html>

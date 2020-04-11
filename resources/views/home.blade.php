@@ -8,6 +8,30 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-4 pd-left-none no-pd">
 
+
+
+
+                            <div class="main-left-sidebar no-margin magic-box  ">
+                                <div class="user-data full-width">
+
+                                    <ul class="user-fw-status">
+                                        <i class="fa fa-times-circle crossControl"></i>
+                                        <li>
+                                            <h4>Word</h4>
+                                            <span class="selectedWord"></span>
+                                        </li>
+                                        <li>
+                                            <h4>Meaning</h4>
+                                            <span class="wordMeaning"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!--main-left-sidebar end-->
+
+
+
+
+
                         </div>
                         <div class="col-lg-6 col-md-8 no-pd">
                             <div class="main-ws-sec">
@@ -45,7 +69,7 @@
                                             <ul class="like-com">
                                                 <li>
                                                     <a href="#"><i class="fas fa-heart"></i> Like</a>
-                                                    <img src="images/liked-img.png" alt="">
+
                                                     <span>25</span>
                                                 </li>
                                                 <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
@@ -65,67 +89,67 @@
                                     </div>
                                     <div class="profiles-slider">
                                         <div class="user-profy">
-                                            <img src="images/resources/user1.png" alt="">
+
                                             <h3>John Doe</h3>
                                             <span>Graphic Designer</span>
                                             <ul>
                                                 <li><a href="#" title="" class="followw">Follow</a></li>
-                                                <li><a href="#" title="" class="envlp"><img src="images/envelop.png" alt=""></a></li>
+                                                <li><a href="#" title="" class="envlp"></a></li>
                                                 <li><a href="#" title="" class="hire">hire</a></li>
                                             </ul>
                                             <a href="#" title="">View Profile</a>
                                         </div><!--user-profy end-->
                                         <div class="user-profy">
-                                            <img src="images/resources/user2.png" alt="">
+
                                             <h3>John Doe</h3>
                                             <span>Graphic Designer</span>
                                             <ul>
                                                 <li><a href="#" title="" class="followw">Follow</a></li>
-                                                <li><a href="#" title="" class="envlp"><img src="images/envelop.png" alt=""></a></li>
+                                                <li><a href="#" title="" class="envlp"> </a></li>
                                                 <li><a href="#" title="" class="hire">hire</a></li>
                                             </ul>
                                             <a href="#" title="">View Profile</a>
                                         </div><!--user-profy end-->
                                         <div class="user-profy">
-                                            <img src="images/resources/user3.png" alt="">
+
                                             <h3>John Doe</h3>
                                             <span>Graphic Designer</span>
                                             <ul>
                                                 <li><a href="#" title="" class="followw">Follow</a></li>
-                                                <li><a href="#" title="" class="envlp"><img src="images/envelop.png" alt=""></a></li>
+                                                <li><a href="#" title="" class="envlp"> </a></li>
                                                 <li><a href="#" title="" class="hire">hire</a></li>
                                             </ul>
                                             <a href="#" title="">View Profile</a>
                                         </div><!--user-profy end-->
                                         <div class="user-profy">
-                                            <img src="images/resources/user1.png" alt="">
+
                                             <h3>John Doe</h3>
                                             <span>Graphic Designer</span>
                                             <ul>
                                                 <li><a href="#" title="" class="followw">Follow</a></li>
-                                                <li><a href="#" title="" class="envlp"><img src="images/envelop.png" alt=""></a></li>
+                                                <li><a href="#" title="" class="envlp"> </a></li>
                                                 <li><a href="#" title="" class="hire">hire</a></li>
                                             </ul>
                                             <a href="#" title="">View Profile</a>
                                         </div><!--user-profy end-->
                                         <div class="user-profy">
-                                            <img src="images/resources/user2.png" alt="">
+
                                             <h3>John Doe</h3>
                                             <span>Graphic Designer</span>
                                             <ul>
                                                 <li><a href="#" title="" class="followw">Follow</a></li>
-                                                <li><a href="#" title="" class="envlp"><img src="images/envelop.png" alt=""></a></li>
+                                                <li><a href="#" title="" class="envlp"> </a></li>
                                                 <li><a href="#" title="" class="hire">hire</a></li>
                                             </ul>
                                             <a href="#" title="">View Profile</a>
                                         </div><!--user-profy end-->
                                         <div class="user-profy">
-                                            <img src="images/resources/user3.png" alt="">
+
                                             <h3>John Doe</h3>
                                             <span>Graphic Designer</span>
                                             <ul>
                                                 <li><a href="#" title="" class="followw">Follow</a></li>
-                                                <li><a href="#" title="" class="envlp"><img src="images/envelop.png" alt=""></a></li>
+                                                <li><a href="#" title="" class="envlp"> </a></li>
                                                 <li><a href="#" title="" class="hire">hire</a></li>
                                             </ul>
                                             <a href="#" title="">View Profile</a>
