@@ -1,0 +1,3 @@
+'Intervention\Image\ImageServiceProvider',
+
+'Image' => 'Intervention\Image\Facades\Image',
